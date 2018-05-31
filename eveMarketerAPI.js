@@ -1,3 +1,4 @@
+// EVEMarketer Price Information
 var systemPrices = document.querySelector('ul');
 
 var url = new URL('http://api.evemarketer.com/ec/marketstat/json')

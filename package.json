@@ -1,0 +1,22 @@
+{
+  "name": "apiproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiProject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ESondgerath/apiProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ESondgerath/apiProject/issues"
+  },
+  "homepage": "https://github.com/ESondgerath/apiProject#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

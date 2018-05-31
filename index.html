@@ -2,23 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="sideBar.css" rel="stylesheet">
+
+    <title>EVE API Pull</title>
 </head>
 <body>
     
-    <h1>Jita System Prices</h1>
-    <p>Here we'll use the EVEMarketer Api to get a list of prices</p>
-​
-    <ul>
-        <!--The JavaScript will load items here-->
-​
-    </ul>
+    <!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">PHSVC Item Browser</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://www.fuzzwork.co.uk/">
+                            <i class="navbar-icon fa fa-address-card animated"></i>
+                            Fuzzworks
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://eve-industry.org/calc/">
+                            <i class="fa fa-code animated"></i>
+                            EVE-Industry
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://docs.google.com/spreadsheets/d/1BjsWKffGGYZ2fN1iHTnJnZgeSVepY1obVv8Ut9fZidM/edit?usp=sharing">
+                            <i class="fa fa-user-circle animated"></i>
+                            SRI DataCenter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
 
-    
-​
-    <script src="systemPrices.js"></script>
+    <div id="wrapper" class="toggled">
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Item Browser
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Minerals</a>
+                    <ul>
+                        <li>Tritanium</li>
+                        <li>Pyerite</li>
+                        <li>Mexallon</li>
+                        <li>Isogen</li>
+                        <li>Nocxium</li>
+                        <li>Zydrine</li>
+                        <li>Megacyte</li>
+                        <li>Morphite</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Frigates</a>
+                    <ul>
+                        <li>Gallente
+                            <ul>
+                                <li>
+                                    <a href="#">Atron</a>
+                                </li>
+                                <li>
+                                    <a href="#">Incursus</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <section id="about" class="content-section text-center">
+                <div class="container-fluid">
+                    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+                    <img src="https://image.eveonline.com/Type/22_64.png")>
+                    <div class="row">
+                        <p class="col-md-4 mb-sm-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed egestas urna. Fusce eget convallis sem. In sed velit massa. Nam posuere sit amet massa venenatis sodales. Nullam vel purus leo. Nullam non nisl eu eros finibus facilisis. Sed nec auctor nisl, ac aliquam nunc.</p>
+                        <p class="col-md-4 mb-sm-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed egestas urna. Fusce eget convallis sem. In sed velit massa. Nam posuere sit amet massa venenatis sodales. Nullam vel purus leo. Nullam non nisl eu eros finibus facilisis. Sed nec auctor nisl, ac aliquam nunc.</p>
+                        <p class="col-md-4 mb-sm-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed egestas urna. Fusce eget convallis sem. In sed velit massa. Nam posuere sit amet massa venenatis sodales. Nullam vel purus leo. Nullam non nisl eu eros finibus facilisis. Sed nec auctor nisl, ac aliquam nunc.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src="eveMarketerAPI.js"></script>
+    <script src="sideBar.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script> -->
 
 </body>
 </html>
