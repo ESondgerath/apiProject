@@ -2,7 +2,6 @@ var systemPrices = document.querySelector('ul');
 
 var url = new URL('http://api.evemarketer.com/ec/marketstat/json')
 
-// var params = {typeid=34} // or:
 var params = {typeid:34}
 // var params = [['typeid', '34']]
 
