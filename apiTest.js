@@ -37,16 +37,16 @@ fetch('https://swapi.co/api/starships')
     starWarsShipCost.appendChild(listItem);  
   }
 
-  for(m of starships) {
-    let listItem = document.createElement('tr');
-    listItem.innerHTML = '<td>' + m.manufacturer + '</td>';
-    starWarsShipCost.appendChild(listItem);
-  }
+  // for(m of starships) {
+  //   let listItem = document.createElement('tr');
+  //   listItem.innerHTML = '<td>' + m.manufacturer + '</td>';
+  //   starWarsShipCost.appendChild(listItem);
+  // }
 
-  for(c of starships) {
-    let listItem = document.createElement('tr');
-    listItem.innerHTML = '<td>' + c.cost_in_credits + '</td>';
-    starWarsShipCost.appendChild(listItem);
+  // for(c of starships) {
+  //   let listItem = document.createElement('tr');
+  //   listItem.innerHTML = '<td>' + c.cost_in_credits + '</td>';
+  //   starWarsShipCost.appendChild(listItem);
   }
 
 
