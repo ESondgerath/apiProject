@@ -5,7 +5,7 @@ body {
     height: 100%;
     color: white;
     background-color: black;
-    background: url("./Assets/amarrFleet.jpg") no-repeat center scroll;
+    background: url("./Assets/deathStar.jpg") no-repeat center scroll;
   }
 
 html {
@@ -354,3 +354,23 @@ img::-moz-selection {
 /*
 SIDEBAR
 */
+
+/*
+TABLE
+*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  /* background-color: #dddddd; */
+}
