@@ -38,16 +38,16 @@ fetch('https://swapi.co/api/starships')
   }
 
   // for(m of starships) {
-  //   let listItem = document.createElement('tr');
-  //   listItem.innerHTML = '<td>' + m.manufacturer + '</td>';
+  //   let listItem = document.createElement('td');
+  //   listItem.innerHTML = m.manufacturer;
   //   starWarsShipCost.appendChild(listItem);
   // }
 
   // for(c of starships) {
-  //   let listItem = document.createElement('tr');
-  //   listItem.innerHTML = '<td>' + c.cost_in_credits + '</td>';
+  //   let listItem = document.createElement('td');
+  //   listItem.innerHTML = c.cost_in_credits;
   //   starWarsShipCost.appendChild(listItem);
-  }
+  // }
 
 
 });
