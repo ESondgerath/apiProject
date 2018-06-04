@@ -21,9 +21,7 @@
 var baseURL = new URL("https://swapi.co/api/starships/")
 
 var pageNumber = 1
-var params = {page:pageNumber}
 
-baseURL.search = new URLSearchParams(params)
 
 // console.log(baseURL)
 
@@ -31,12 +29,16 @@ var starWarsShipCost = document.querySelector('#table');
 // baseURL='https://swapi.co/api/starships/?page=1'
 
 function fetchAPI() {
+  var params = {page:pageNumber}
+  baseURL.search = new URLSearchParams(params)
+  
   fetch(baseURL) 
   .then(function(response) {   
     return response.json(); 
   })
   .then(function(json) {
     let starships = json.results; 
+    document.getElementById("table").innerHTML = "";
   
     for(n of starships) {
       let listItem = document.createElement('tr');
@@ -48,18 +50,25 @@ function fetchAPI() {
 
 fetchAPI()
 
-document.getElementById("prevButton").click(function(pageNumber) {
-  pageNumber--
-  return pageNumber--
-  fetchAPI()
-});
+// document.getElementById("prevButton").onclick(function(pageNumber) {
+//   pageNumber--
+//   return pageNumber--
+//   fetchAPI()
+// });
 
-document.getElementById("nextButton").click(function() {
+// document.getElementById("nextButton").onclick(function() {
+//   pageNumber++
+//   return pageNumber++
+//   console.log(pageNumber)
+//   fetchAPI()
+// });
+
+document.getElementById("nextButton").onclick = function() {
   pageNumber++
-  return pageNumber++
-  console.log(pageNumber)
+  // console.log(pageNumber)
   fetchAPI()
-});
+  // return pageNumber
+}
 
 // document.getElementById("nextButton").click(function(i) {
 //   i.preventDefault();
