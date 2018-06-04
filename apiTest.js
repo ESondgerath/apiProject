@@ -30,12 +30,18 @@ fetch('https://swapi.co/api/starships')
 
   for(n of starships) {
     let listItem = document.createElement('tr');
-    listItem.innerHTML = '<td>' + n.name + '</td>';
+    // listItem.innerHTML = '<td>' + n.name + '</td>';
+    listItem.innerHTML = '<td>' + n.name + '</td>' + n.manufacturer + '</td>' + n.cost_in_credits + '</td>';
     // listItem.innerHTML = '<td>' + m.manufacturer + '</td>';
     // listItem.innerHTML = '<td>' + c.cost_in_credits + '</td>';
     // listItem.innerHTML = '<td>' + n.name + '</td>' + '<td>' + m.manufacturer + '</td>' + '<td>' + c.cost_in_credits + '</td>';
     starWarsShipCost.appendChild(listItem);  
   }
+
+  // array.forEach(name.starships => {
+  //   listItem.innerHTML = '<td>' + name + '</td>';
+  //   starWarsShipCost.appendChild(listItem);
+  // });
 
   // for(m of starships) {
   //   let listItem = document.createElement('td');
