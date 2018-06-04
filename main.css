@@ -369,8 +369,9 @@ td, th {
   border: 1px solid;
   text-align: left;
   padding: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-tr:nth-child(even) {
-  /* background-color: #dddddd; */
-}
+/* tr:nth-child(even) {
+  background-color: #dddddd;
+} */

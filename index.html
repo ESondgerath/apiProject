@@ -46,13 +46,13 @@
         </div>
     </nav> -->
 
-    <div id="wrapper" class="toggled">
+    <!-- <div id="wrapper" class="toggled">
 
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Item Browser
+                        Film Selector
                     </a>
                 </li>
                 <li>
@@ -77,20 +77,22 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <div id="page-content-wrapper">
             <section id="about" class="content-section text-center">
                 <div class="container-fluid">
-                    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+                    <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
+                    <a class="btn btn-secondary" id="prevButton">Previous</a>
+                    <a class="btn btn-secondary" id="nextButton">Next</a>
                     <!-- <img src="")> -->
                     <div class="row">
                         <div class="col-lg-12 mb-sm-30">
                             <table id="table">
                                 <tr>
-                                  <th>Name</th>
-                                  <th>Manufacturer</th>
-                                  <th>Cost in Credits</th>
+                                    <th>Name</th>
+                                    <th>Manufacturer</th>
+                                    <th>Cost in Credits</th>
                                 </tr>
                             </table>
                         </div>
@@ -107,12 +109,6 @@
     <!-- <script src="eveMarketerAPI.js"></script> -->
     <script src="sideBar.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 
 </body>
 </html>

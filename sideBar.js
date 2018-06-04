@@ -13,7 +13,7 @@ Sidebar
 //         $document.GetElementByID("wrapper").toggleClass("toggled");
 // });
 
-document.getElementById("menu-toggle").click(function(i) {
-    i.preventDefault();
-    document.getElementById("wrapper").toggleClass("toggled");
-});
+// document.getElementById("menu-toggle").click(function(i) {
+//     i.preventDefault();
+//     document.getElementById("wrapper").toggleClass("toggled");
+// });
